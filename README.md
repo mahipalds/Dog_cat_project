@@ -1,27 +1,42 @@
-# Dog_cat_project
+# **Dog vs Cat Image Classification**
 
-Dog vs Cat Image Classification:- This project uses Convolutional Neural Networks (CNNs) to classify images of dogs and cats. The model pipeline includes data augmentation techniques to improve generalization and transfer learning using a pre-trained model for faster and more accurate classification.
+**Project Overview**  
+This project uses **Convolutional Neural Networks (CNNs)** to classify images of dogs and cats. The model pipeline includes **data augmentation** techniques to improve generalization and **transfer learning** using a pre-trained model for faster and more accurate classification.
 
-Project Overview: - The goal of this project is to build a robust image classifier that distinguishes between dog and cat images. The steps include:
+---
 
-CNN Architecture: A custom CNN model is initially built.
+## **Project Goals**
+The goal of this project is to build a robust image classifier that distinguishes between dog and cat images. The steps include:
 
-Data Augmentation: Applied to increase the diversity of the training data through transformations like rotation, flipping, and zooming.
+1. **CNN Architecture**: A custom CNN model is initially built.
+2. **Data Augmentation**: Applied to increase the diversity of the training data through transformations like rotation, flipping, and zooming.
+3. **Transfer Learning**: A pre-trained model (**VGG16**) is fine-tuned to improve performance.
 
-Transfer Learning: A pre-trained model (VGG16) is fine-tuned to improve performance.
+---
 
-Dataset
+## **Dataset**
 
-500 images of dogs and 500 images of cats, resized to 512x512 pixels.
+- **Images**: 500 images of dogs and 500 images of cats, resized to 512x512 pixels.
+- **Directory Structure**:
+    - `/kaggle/input/dog-vs-cat/animal/dog`
+    - `/kaggle/input/dog-vs-cat/animal/cat`
 
-Images are organized under directories:
+---
 
-/kaggle/input/dog-vs-cat/animal/dog
+## **Approach**
 
-/kaggle/input/dog-vs-cat/animal/cat
+1. **Data Augmentation**: Enhance the training set by applying various transformations like rotation, flipping, and zooming to improve model generalization.
+2. **CNN and Transfer Learning**: Use a custom CNN and fine-tune the **VGG16** pre-trained model for classification.
 
-Approach
+---
 
-Data Augmentation to enhance the training set.
+**Technologies Used**:
+- TensorFlow
+- Keras
+- Python
+- NumPy
+- Matplotlib
 
-CNN and Transfer Learning models for classification.
+---
+
+Feel free to clone the repository and try out the model for image classification tasks!
